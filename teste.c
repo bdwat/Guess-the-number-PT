@@ -14,11 +14,13 @@ int main() {
 
         if (tentativas < 2) {
             if (palpite > ns) {
-                printf("O numero secreto é menor que %d\n", palpite);
+                printf("O numero secreto Ã© menor que %d\n\n", palpite);
                 tentativas++;
+                printf("%d tentativas restantes\n\n",3-tentativas);
             } else if (palpite < ns) {
-                printf("O numero secreto é maior que %d\n", palpite);
+                printf("O numero secreto Ã© maior que %d\n", palpite);
                 tentativas++;
+                printf("%d tentativas restantes\n\n",3-tentativas);
             } else {
                 printf("Voce acertou!");
                 break;
@@ -37,4 +39,3 @@ int main() {
     }
     return 0;
 }
-	
